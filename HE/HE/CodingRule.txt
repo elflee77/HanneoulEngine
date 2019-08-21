@@ -1,0 +1,21 @@
+﻿
+
+From Unreal Coding Rule
+◾The first letter of each word in a name (such as type name or variable name) is capitalized, and there is usually no underscore between words. For example, Health and UPrimitiveComponent are correct, but not lastMouseCoordinates or delta_coordinates. 
+◾Type names are prefixed with an additional upper-case letter to distinguish them from variable names. For example, FSkin is a type name, and Skin is an instance of a FSkin. 
+◾Template classes are prefixed by T. 
+◾Classes that inherit from UObject are prefixed by U. 
+◾Classes that inherit from AActor are prefixed by A. 
+◾Classes that inherit from SWidget are prefixed by S. 
+◾Classes that are abstract interfaces are prefixed by I. 
+◾Enums are prefixed by E. 
+◾Boolean variables must be prefixed by b (for example, bPendingDestruction, or bHasFadedIn). 
+◾Most other classes are prefixed by F, though some subsystems use other letters. 
+◾Typedefs should be prefixed by whatever is appropriate for that type: F if it's a typedef of a struct, U if it's a typedef of a UObject and so on. 
+◾A typedef of a particular template instantiation is no longer a template, and should be prefixed accordingly, for example: 
+typedef TArray<FMytype> FArrayOfMyTypes;
+◾Prefixes are omitted in C#. 
+◾UnrealHeaderTool requires the correct prefixes in most cases, so it's important to provide them. 
+◾Type and variable names are nouns. 
+◾Method names are verbs that describe the method's effect, or describe the return value of a method that has no effect. 
+
